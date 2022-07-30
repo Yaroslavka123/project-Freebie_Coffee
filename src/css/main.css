@@ -1,0 +1,1036 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: "Nunito";
+}
+
+.no-transition {
+    transition: none !important;
+}
+
+.body_fix {
+    overflow: hidden;
+}
+
+.general_background {
+    background-color: #f9fbff;
+}
+
+.buger_wrapper {
+    display: none;
+}
+
+.header {
+    position: relative;
+    margin: 0 auto;
+    max-width: 1400px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.header_text {
+    line-height: 68px;
+    position: absolute;
+    left: 195px;
+    top: 508px;
+    font-family: "Montserrat";
+    font-weight: 900;
+    font-size: 54px;
+    color: #415167;
+    width: 470px;
+}
+
+.header_text_span {
+    z-index: 2;
+    text-align: center;
+    position: relative;
+    left: -15px;
+    top: 3px;
+    font-family: "Montserrat";
+    display: block;
+    width: 486px;
+    height: 70px;
+    font-weight: 900;
+    font-size: 54px;
+    color: white;
+    background-color: #c7a17a;
+}
+
+.navigation_wrapper {
+    display: flex;
+    position: relative;
+}
+
+.header_logo_wrapper {
+    cursor: pointer;
+    padding: 75px 139px 0 0;
+}
+
+.navigation {
+    width: 274px;
+    background-color: #415167;
+}
+
+.icon_wrapper {
+    margin: 89px 0 0 60px;
+}
+
+.icon_wrapper::after {
+    cursor: pointer;
+    display: flex;
+    color: white;
+    content: "2";
+    width: 20px;
+    height: 20px;
+    background-color: #c7a17a;
+    position: relative;
+    border-radius: 50px;
+    left: 12px;
+    bottom: 35px;
+    justify-content: center;
+    font-weight: 300;
+    font-size: 14px;
+    align-items: center;
+}
+
+.nav {
+    margin: 100px 0 0 55px;
+}
+
+.nav_title {
+    color: white;
+    font-weight: 700;
+    font-size: 16px;
+    margin-bottom: 35px;
+}
+
+.nav_btn {
+    padding-bottom: 30px;
+    font-size: 16px;
+    display: block;
+    color: white;
+    text-decoration: none;
+}
+
+.video_button {
+    position: absolute;
+    top: 358px;
+    left: 318px;
+    display: block;
+    width: 54px;
+    height: 54px;
+    background-color: white;
+    border-radius: 50px;
+    text-align: center;
+    line-height: 55px;
+    color: #c7a17a;
+}
+
+.coffe_wrapper {
+    margin-top: 90px;
+    text-align: center;
+    padding-bottom: 110px;
+}
+
+.coffee_subtitle {
+    font-weight: 600;
+    font-size: 18px;
+    font-family: "Montserrat";
+}
+
+.coffe_title {
+    font-family: "Montserrat";
+    font-weight: 900;
+    font-size: 16px;
+    font-size: 29px;
+    color: #415167;
+    margin-top: 5px;
+}
+
+.coffe_box {
+    max-width: 1170px;
+    margin: 90px auto 0 auto;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    font-family: "Nunito";
+}
+
+.coffe_item {
+    width: 226px;
+    height: 246.5px;
+}
+
+.coffee_img {
+    padding-bottom: 35px;
+}
+
+.coffee_title {
+    font-size: 25px;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.coffee_box_subtitle {
+    font-weight: 300;
+    font-size: 16px;
+    text-align: center;
+    height: 66px;
+    width: 226px;
+    line-height: 22px;
+}
+
+.revo_container {
+    text-align: center;
+    font-family: "Nunito";
+}
+
+.revo_subtitle {
+    margin-top: 95px;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+/* .revo_title {
+    font-family: 'Montserrat';
+    font-weight: 900;
+    font-size: 30px;
+    color: #415167;
+} */
+
+.shop_block {
+    position: absolute;
+    top: -90px;
+    z-index: 1;
+    height: 894px;
+    width: 384px;
+    background-color: #415167;
+}
+
+.revo_container {
+    max-width: 1400px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.shop_container {
+    position: relative;
+    z-index: 3;
+    overflow: hidden;
+    height: 544px;
+    max-width: 1275px;
+    margin: 72px 0 0 125px;
+}
+
+.shop_button {
+    position: absolute;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #c7a17a;
+    border-radius: 50px;
+    height: 48px;
+    width: 48px;
+    top: 245px;
+    left: 1160px;
+    cursor: pointer;
+}
+
+.shop_item {
+    position: relative;
+    opacity: 1;
+    top: 0;
+    left: 0px;
+    transition: all 0.3s;
+    display: flex;
+    flex-direction: colum;
+    text-align: start;
+    width: 560px;
+    height: 256px;
+    display: flex;
+    background-color: white;
+    margin: 0 30px 30px 0;
+}
+
+.shop_item_disabled {
+    opacity: 0.3;
+}
+
+.item_img {
+    background-color: #edf0f5;
+    width: 235px;
+    height: 256px;
+}
+
+.item_text {
+    width: 460px;
+    padding: 45px 0 0 45px;
+}
+
+.price {
+    color: #c7a17a;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.item_name {
+    font-weight: 700;
+    font-size: 24px;
+    padding-top: 5px;
+}
+
+.item_subtitle {
+    padding: 25px 0 0 0;
+    line-height: 22px;
+    font-weight: 300;
+    font-size: 16px;
+}
+
+.button_container {
+    display: flex;
+    padding-top: 35px;
+}
+
+.buy_item {
+    color: #f9fbff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
+    font-size: 16px;
+    height: 32px;
+    width: 134px;
+    background-color: #c7a17a;
+    border-radius: 50px;
+    user-select: none;
+    cursor: pointer;
+}
+
+.info_item {
+    font-weight: 700;
+    font-size: 16px;
+    padding: 10px 0 0 27px;
+    user-select: none;
+    cursor: pointer;
+}
+
+.shop_line {
+    position: reletive;
+    top: 0;
+    left: 0;
+    display: flex;
+}
+
+.giftsets_container {
+    font-family: "Nunito";
+    padding-top: 212px;
+    max-width: 1400px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.giftsets_subtitle {
+    position: relative;
+    z-index: 1;
+    color: #415167;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.giftsets_title {
+    position: relative;
+    z-index: 1;
+}
+
+.giftsets_block_wrapper {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.giftsets_block {
+    margin: 70px 130px 0 0;
+    position: reletive;
+    z-index: 2;
+    display: flex;
+    justify-content: flex-end;
+    width: 882px;
+    text-align: left;
+    background-color: white;
+    /* flex-direction: column; */
+}
+
+.slider_price {
+    margin-top: 61px;
+}
+
+.slider_name_item {
+    margin-top: 5px;
+}
+
+.slider_subtitle {
+    padding: 0;
+    margin-top: 10px;
+    width: 430px;
+}
+
+.slider_info_block {
+    display: flex;
+    margin-right: 75px;
+}
+
+.slider_info_block:last-child {
+    margin-right: 0px;
+}
+
+.slider_info_wrapper {
+    display: flex;
+    margin-top: 25px;
+}
+
+.slider_button_container {
+    display: flex;
+    margin-top: 40px;
+}
+
+.slider_button_1 {
+    cursor: pointer;
+    color: #f9fbff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    width: 166px;
+    height: 37.7px;
+    font-size: 16px;
+    background-color: #c7a17a;
+    border-radius: 50px;
+    margin-right: 55px;
+}
+
+.info_block_img {
+    width: 26px;
+    height: 26px;
+    margin: auto 0;
+    margin-right: 20px;
+}
+
+.info_block_text {
+    font-weight: 300;
+    font-size: 16px;
+}
+
+.info_block_subtext {
+    font-weight: 700;
+    font-size: 16px;
+    margin-top: 8px;
+}
+
+.js_even {
+    font-weight: 700;
+    font-size: 16px;
+    margin-top: 8px;
+}
+
+.giftsets_block_img {
+    position: absolute;
+    right: 810px;
+    top: 390px;
+    /* пизда */
+}
+
+.side_button {
+    position: relative;
+    left: 0;
+    top: 0;
+    transition: all 0.5s ease;
+    font-family: "Montserrat";
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 88px;
+    height: 154px;
+    background-color: #f7f8fc;
+    font-weight: 900;
+    font-size: 30px;
+    color: #bfc6d0;
+    cursor: pointer;
+}
+
+.side_active {
+    background-color: white;
+    color: #415167;
+}
+
+.gift_slider {
+    overflow: hidden;
+    height: 462px;
+    width: 496px;
+    border-top: 2px solid #f7f8fc;
+    border-right: 2px solid #f1f1f3;
+}
+
+.gift_content_block {
+    transition: all 0.5s ease;
+    min-height: 100%;
+    position: relative;
+    top: 0;
+}
+
+.giftsets_container {
+    position: relative;
+    z-index: 2;
+}
+
+.giftsets_rectangle {
+    position: absolute;
+    top: 125px;
+    z-index: 0;
+    width: 77%;
+    height: 802px;
+    background-color: #edf0f5;
+}
+
+.combo_button {
+    left: 1285px;
+    top: 355px;
+}
+
+.slider_side {
+    position: relative;
+    overflow: hidden;
+    height: 462px;
+}
+
+.section_combo {
+    font-family: "Nunito";
+    text-align: center;
+    position: reletive;
+    margin-top: 215px;
+}
+
+.combo_wrapper {
+    position: relative;
+    z-index: 3;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.combo_rectangle {
+    position: absolute;
+    height: 906px;
+    right: 0px;
+    z-index: 0;
+    margin-top: -91px;
+    width: 326px;
+    background-color: #415167;
+}
+
+.combo_slider {
+    display: flex;
+    position: reletive;
+    z-index: 3;
+    text-align: left;
+    margin: 63px 0 0 127px;
+    height: 562px;
+    max-width: 1273px;
+    overflow: hidden;
+    opacity: 0.9999;
+}
+
+.combo_block {
+    position: relative;
+    left: 0;
+    transition: left 0.3s ease;
+    height: 562px;
+    width: 360px;
+    margin-right: 30px;
+    background-color: white;
+}
+
+.combo_disabled {
+    opacity: 0.3;
+}
+
+.combo_block_content {
+    margin-left: 42px;
+}
+
+.price_box {
+    display: flex;
+    margin-top: 39px;
+}
+
+.combo_discount {
+    font-size: 14px;
+    margin-left: 20px;
+    text-decoration: line-through;
+    color: #415167;
+}
+
+.combo_name {
+    margin-top: 3px;
+}
+
+.combo_block_subtitle {
+    padding-top: 12px;
+    width: 276px;
+}
+
+.combo_button_container {
+    display: flex;
+    margin-top: 30px;
+}
+
+.slider_button {
+    padding: 0;
+    margin: 0;
+    height: 32px;
+    width: 134px;
+}
+
+.slider_button_info {
+    margin: 7px 0 0 65px;
+    padding: 0;
+}
+
+.footer {
+    display: flex;
+    font-family: "Nunito";
+    font-size: 16px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: 130px;
+    height: 60px;
+    background-color: #edf0f5;
+}
+
+/* Adaptive Header */
+
+@media screen and (max-width: 1380px) {
+    .header_text {
+        display: block;
+        background-color: #f9fbff;
+        z-index: 3;
+        left: 100px;
+    }
+
+    .header_logo_wrapper {
+        padding: 5px;
+        margin: 0;
+        position: absolute;
+        left: 5px;
+        top: 50px;
+        z-index: 3;
+        display: block;
+        background-color: #f9fbff;
+    }
+
+    .header_logo {
+        display: block;
+        background-color: #f9fbff;
+    }
+
+    .shop_button {
+        left: 1100px;
+    }
+
+    .giftsets_block_wrapper {
+        margin: 0 auto;
+    }
+
+    .combo_button {
+        left: 1230px;
+    }
+}
+
+@media screen and (max-width: 1280px) {
+    .shop_container {
+        margin-left: 20px;
+    }
+
+    .shop_button {
+        left: 1000px;
+    }
+
+    .giftsets_block {
+        margin-top: 400px;
+        width: 600px;
+    }
+
+    .giftsets_block_img {
+        left: 25%;
+        top: 300px;
+    }
+}
+
+@media screen and (max-width: 1080px) {
+    .shop_button {
+        left: 890px;
+    }
+
+    .shop_block {
+        width: 300px;
+    }
+}
+
+@media screen and (max-width: 964px) {
+    .header_text {
+        left: 20px;
+        top: 300px;
+    }
+
+    .video_button {
+        top: 250px;
+        left: 230px;
+    }
+
+    .header_video {
+        height: 550px;
+    }
+
+    .shop_container {
+        margin-left: 130px;
+    }
+
+    .shop_button {
+        left: 550px;
+    }
+
+    .shop_block {
+        width: 200px;
+    }
+
+    .combo_rectangle {
+        width: 190px;
+    }
+
+    .combo_button {
+        left: 750px;
+    }
+}
+
+@media screen and (max-width: 820px) {
+    .giftsets_block {
+        margin-right: 5%;
+    }
+
+    .giftsets_block_img {
+        left: 12%;
+    }
+
+    .combo_button {
+        left: 490px;
+    }
+}
+
+@media screen and (max-width: 764px) {
+    .navigation {
+        width: 165px;
+    }
+
+    .nav {
+        margin-left: 20px;
+    }
+
+    .shop_button {
+        left: 560px;
+    }
+
+    .shop_container {
+        margin-left: 40px;
+    }
+
+    .shop_block {
+        width: 160px;
+    }
+
+    .combo_slider {
+        margin-left: 60px;
+    }
+}
+
+@media screen and (max-width: 660px) {
+    .header_text {
+        line-height: 43px;
+        font-size: 30px;
+        width: 250px;
+        height: 155px;
+        color: #415167;
+        top: 230px;
+    }
+
+    .video_button {
+        top: 160px;
+        left: 130px;
+    }
+
+    .burger_menu_container {
+        margin-left: 55px;
+    }
+
+    .burger_menu {
+        z-index: 3;
+        position: relative;
+        width: 30px;
+        height: 18px;
+        cursor: pointer;
+    }
+
+    .burger_menu::before,
+    .burger_menu::after,
+    .burger_menu span {
+        position: absolute;
+        left: 0;
+        height: 10%;
+        width: 100%;
+        background-color: #fff;
+        transition: all 0.5s ease;
+    }
+
+    .burger_menu::before,
+    .burger_menu::after {
+        content: "";
+    }
+
+    .burger_menu::before {
+        top: 0;
+    }
+
+    .burger_menu::after {
+        bottom: 0;
+    }
+
+    .burger_menu span {
+        top: 50%;
+        transform: scale(1) translate(0, -50%);
+    }
+
+    .header_text_span {
+        z-index: 2;
+        text-align: center;
+        width: 270px;
+        height: 70px;
+        font-size: 30px;
+        color: white;
+        background-color: #c7a17a;
+    }
+
+    .buger_wrapper {
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 5;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0);
+        height: 100%;
+        transition: all 1s ease;
+    }
+
+    .buger_wrapper_active_display {
+        display: block;
+    }
+
+    .buger_wrapper_active_background {
+        background-color: rgba(0, 0, 0, 0.7);
+    }
+
+    .burger_container {
+        position: fixed;
+        top: 0;
+        left: -100%;
+        background-color: #415167;
+        width: 177px;
+        height: 100%;
+        transition: left 1s ease;
+    }
+
+    .burger_container_active {
+        left: 0;
+    }
+
+    .burger_nav_icon_wrapper {
+        display: block;
+        padding: 18px 0 0 25px;
+    }
+
+    .burger_nav_icon_wrapper::after {
+        cursor: pointer;
+        display: flex;
+        color: white;
+        content: "2";
+        width: 13px;
+        height: 13px;
+        background-color: #c7a17a;
+        position: relative;
+        border-radius: 50px;
+        left: 10px;
+        bottom: 27px;
+        justify-content: center;
+        font-weight: 300;
+        font-size: 9px;
+        align-items: center;
+    }
+
+    .burger_nav_icon {
+        height: 12px;
+    }
+
+    .burger_nav_title {
+        font-size: 12px;
+        color: white;
+        margin: 73px 0 0 23px;
+    }
+
+    .burger_nav_container {
+        display: flex;
+        flex-direction: column;
+        margin: 28px 0 0 22px;
+    }
+
+    .burger_nav_btn {
+        color: white;
+        font-size: 12px;
+        text-decoration: none;
+        margin-bottom: 22px;
+    }
+
+    .icon_wrapper {
+        margin: 40px 0px 10px 60px;
+    }
+
+    .header_video {
+        width: 305px;
+        height: 410px;
+    }
+
+    .navigation {
+        width: 165px;
+    }
+
+    .icon_wrapper {
+        margin-top: 20px;
+    }
+
+    .nav {
+        display: none;
+    }
+
+    .shop_button {
+        left: 500px;
+    }
+
+    .shop_container {
+        margin-left: 20px;
+    }
+
+    .shop_block {
+        width: 130px;
+    }
+
+    .combo_rectangle {
+        width: 150px;
+    }
+
+    .giftsets_block {
+        margin-right: 1%;
+    }
+
+    .giftsets_block_img {
+        left: 10%;
+    }
+
+    .giftsets_block {
+        flex-direction: column;
+    }
+
+    .slider_side {
+        display: flex;
+        justify-content: flex-start;
+        height: 154px;
+        border-top: 2px solid rgba(0, 0, 0, 0.1);
+    }
+
+    .side_button {
+        min-width: 143.3px;
+    }
+
+    .giftsets_block {
+        margin-right: 11%;
+    }
+
+    .giftsets_block {
+        width: 430px;
+    }
+
+    .slider_button_container {
+        margin-bottom: 20px;
+        margin-left: 50px;
+        width: 350px;
+    }
+
+    .gift_slider {
+        border: none;
+        padding-left: 10px;
+    }
+
+    .slider_subtitle {
+        margin-right: 15px;
+        width: 370px;
+    }
+
+    .slider_info_wrapper {
+        width: 400px;
+        margin-left: 10px;
+    }
+}
+
+@media screen and (max-width: 590px) {
+    .item_text {
+        padding-left: 5px;
+    }
+
+    .shop_item {
+        width: 430px;
+        display: flex;
+    }
+
+    .shop_button {
+        left: 400px;
+    }
+
+    .shop_block {
+        width: 80px;
+    }
+
+    .combo_rectangle {
+        width: 80px;
+    }
+
+    .giftsets_block {
+        margin-right: 11%;
+    }
+
+    .giftsets_block_img {
+        left: 5%;
+    }
+}
+
+@media screen and (max-width: 520px) {
+
+    /* .giftsets_block {
+        margin-right: 5%;
+    } */
+    .gift_content_block {
+        width: 300px;
+        margin: 0;
+        padding: 0;
+    }
+
+    .giftsets_block_img {
+        left: 0%;
+    }
+}
